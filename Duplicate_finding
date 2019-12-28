@@ -1,0 +1,15 @@
+def CheckIfduplicate(listofelement):
+    for elem in listofelement:
+        if listofelement.count(elem)>1:
+            return True
+        else:
+            False
+
+listofelement=input("Enter a String:")
+listofelement=list(listofelement)
+result=CheckIfduplicate(listofelement)
+
+if result:
+    print("True")
+else:
+    print("False")
